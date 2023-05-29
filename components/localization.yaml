@@ -1,7 +1,7 @@
 apiVersion: delivery.ocm.software/v1alpha1
 kind: Localization
 metadata:
-  name: podinfo
+  name: incidentmg
   namespace: ocm-system
 spec:
   interval: 1m0s
