@@ -1,0 +1,14 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: ComponentVersion
+metadata:
+  name: incidentmg
+  namespace: ocm-system
+spec:
+  interval: 10m0s
+  component: github.com/sidhishruti22/incident-mg
+  version:
+    semver: v1.0.1
+  repository:
+    url: ghcr.io/sidhishruti22
+    secretRef:
+      name: creds
