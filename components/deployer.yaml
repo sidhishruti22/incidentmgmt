@@ -1,0 +1,14 @@
+apiVersion: delivery.ocm.software/v1alpha1
+kind: FluxDeployer
+metadata:
+  name: incidentmg
+  namespace: ocm-system
+spec:
+  sourceRef:
+    kind: Resource
+    name: incidentmg-deployment
+  kustomizationTemplate:
+    interval: 1m0s
+    path: ./
+    prune: true
+    targetNamespace: default
